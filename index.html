@@ -5,22 +5,46 @@
 		<meta charset="utf-8">
 		<title>Dojo Css</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
 
 <main>
 		<header>
-			<h1><span class="grey">Company</span><span class="blue">NAME</span></h1>
+			<h4><span class="grey">Company</span><span class="blue">NAME</span></h4>
+
+			<div id="logomenu">
+				<img src="img/bars.png" alt="logo menu"/>
+			</div>
+
 			<nav>
-				<ul>
-					<li>What</li>
-					<li>Companies</li>
+				<ul class="nav">
+					<li id="blue">What</li>
+					<li>Companies ⌄
+						<ul class="snav">
+							<li>company1</li>
+							<li>company2</li>
+							<li>company3</li>
+						</ul>
+					</li>
 					<li>Meet</li>
-					<li>Testimonials</li>
-					<li>Why</li>
+					<li>Testimonials ⌄
+						<ul class="snav">
+							<li>clients</li>
+							<li>partners</li>
+						</ul>
+					</li>
+					<li>Why ⌄
+						<ul class="snav">
+							<li>because</li>
+							<li>why not</li>
+						</ul>
+					</li>
 				</ul>
 			</nav>
+
 		</header>
 
 		<section class="title">

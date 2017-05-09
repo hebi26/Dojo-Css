@@ -1,82 +1,210 @@
 /***************************
         Dojo Css
 ***************************/
+/**{
+  border: 1px solid black;
+}*/
 
 main{
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 header{
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
+  display: flex;
 }
+
+nav{
+  position: relative;
+  display: inline-block;
+  margin-top: 3vmin;
+  font-size: 1.7vmin;
+}
+
 ul {
-    display: flex;
+  display: flex;
+  padding-left: 0;
 }
 
 li {
-    list-style: none;
-    margin-right: 5px;
+  list-style: none;
+  margin-right: 5vmin;
 }
-li:first-child {
-    color: #486c8c;
+
+.nav{
+  margin-top: 0;
 }
+
+.nav li:hover .snav{
+  display: block;
+}
+
+.snav{
+  position: absolute;
+  display: none;
+  background-color: #486c8c;
+  font-size: 1.5vmin;
+  color: white;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.snav li{
+  margin: 0.7vmin;
+}
+
+#logomenu{
+  display: none;
+}
+
+#blue{
+ color: #486c8c;
+}
+
 .title{
-    text-align: center;
-    background-image: url("./img/bg.jpg");
-    height : 400px;
-    background-position: center center;
-
+  text-align: center;
+  background-image: url("./img/bg.jpg");
+  height : 50vmin;
+  background-position: center center;
+  z-index: 1;
 }
 
+h4{
+  flex: 2;
+  margin-top: 3vmin;
+  font-size: 3.5vmin;
+}
 .second_text{
-    flex : 5;
-    text-align: center;
+  height: 20vmin;
+  text-align: center;
 }
-.last_section {
-    display: flex;
 
+.second_text h2{
+  margin-top: 2vmin;
+  font-size: 3vmin;
+}
 
-
+.second_text p{
+  margin-top: -1vmin;
+  font-size: 2vmin;
 }
 
 .blue {
-    color: #486c8c;
+  color: #486c8c;
 }
 
 .grey {
-    color: #bbbbae;
+  color: #bbbbae;
 }
 
 button {
-    margin: auto;
-    border-radius: 3px;
-    border: none;
-    color: white;
-    background-color: #486c8c;
-    padding: 1%;
+  margin: auto;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: #486c8c;
+  padding: 2vmin;
+  font-size: 1.5vmin;
 }
 
 
 .ok{
-    margin-top: 150px;
-color: white;
+  margin-top: 15vmin;
+  color: white;
+  font-size: 4vmin;
 
 }
 
 .logo {
-    margin:auto;
+  margin: 0px auto 0px auto;
+  width: 15vmin;
+  height: 15vmin;
 
+}
+
+.last_section {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+.last_section h3{
+  font-size: 2vmin;
+}
+
+.last_section p{
+  font-size: 2vmin;
 }
 
 .last_section article{
-    display:flex;
-    flex-direction:column;
-    align-content:center;
-    text-align:center;
-    justify-content:center;
+  margin: 0px auto 0px auto;
+  display:flex;
+  flex-direction: column;
+  align-content:center;
+  text-align:center;
+  width: 600px;
 }
+
+/*quand on reduit la fenetre*/
+
+@media screen and (max-width: 640px) {
+
+  #logomenu{
+    display: inline-block;
+    float: right;
+    margin-top: -10vmin;
+  }
+
+  header {
+    text-align: center;
+    display: inline-block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 3vmin;
+    display: block;
+    width: 100%;
+  }
+  li{
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  li:hover{
+    color: black;
+    background-color: lightblue;
+  }
+
+  .snav{
+    z-index: 2;
+
+    margin-top: 1vmin;
+    margin-left: -0.2%;
+    width: 100%;
+    background-color: #486c8c;
+    border:1px solid black;
+
+  }
+  .snav li{
+    margin: inherit;
+    width: 100%;
+    font-size: 3vmin;
+    color: white;
+  }
+  .title{
+    z-index: 1;
+  }
+}
+
+/*------------------------------------------------*/

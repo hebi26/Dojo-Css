@@ -1,6 +1,6 @@
- $(document).ready(function(){
-
-   $("#logomenu").click(function(){
-     $("nav").toggle();
-   });
-});
+//  $(document).ready(function(){
+//
+//    $("#logomenu").click(function(){
+//      $("nav").toggle();
+//    });
+// });

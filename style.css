@@ -33,6 +33,7 @@ li {
 }
 
 .nav{
+
   margin-top: 0;
 }
 
@@ -146,23 +147,99 @@ button {
   width: 600px;
 }
 
+input{
+  display: none;
+}
+
+label{
+  display: none;
+}
+
 /*quand on reduit la fenetre*/
+
+/*-------MENU LATERAL SLIDE-------------------------------*/
 
 @media screen and (max-width: 640px) {
 
-  #logomenu{
+
+  nav{
+    margin-top: -2.5vmin;
+    margin-left: -200px;
+    transition: 1s;
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: lightblue;
+    text-align: center;
+    z-index: 2;
+    font-size: 3vmin;
+  }
+
+  nav:hover{
+  transition: 1s;
+  margin-left: -2vmin;
+}
+  .nav{
+    display: block;
+    padding-top: 25vmin;
+    color: white;
+  }
+
+  li {
+    margin-top: 1vmin;
+    display: block;
+    padding: 3vmin 0vmin 3vmin 0vmin;
+    width: 99%;
+  }
+
+.snav{
+  position: relative;
+  margin-top: 3vmin;
+  display: none;
+  width: 99.8%;
+  background-color: lightblue;
+
+}
+
+li:hover{
+  color: #486c8c;
+}
+
+ .snav li:hover{
+  color: lightblue;
+ }
+.snav li {
+  width: 100%;
+  font-size: 2.5vmin;
+  background-color: #486c8c;
+}
+/*--------------------------------------------------*/
+/*--------MENU ICONE DEROULANT--------------------*/
+
+  /*#logomenu{
     display: inline-block;
     float: right;
-    margin-top: -10vmin;
+    margin-top: -12vmin;
+  }*/
+
+  /*label {
+    float: right;
+    margin-top: -9vmin;
+    display: inline-block;
+  }
+
+  #toggle:checked~ nav{
+    display: block;
+  }
+
+  nav{
+    display: none;
+    width: 99.5%;
   }
 
   header {
     text-align: center;
     display: inline-block;
-  }
-
-  nav {
-    display: none;
   }
 
   ul{
@@ -173,12 +250,14 @@ button {
     font-size: 3vmin;
     display: block;
     width: 100%;
+
   }
   li{
     padding-top: 1vmin;
     padding-bottom: 1vmin;
     border-radius: 3px;
     width: 100%;
+    border: 1px solid #486c8c;
   }
 
   li:hover{
@@ -187,24 +266,19 @@ button {
   }
 
   .snav{
-    z-index: 2;
-
+    position: relative;
     margin-top: 1vmin;
     margin-left: -0.2%;
-    width: 100%;
+    width: 99.8%;
     background-color: #486c8c;
     border:1px solid black;
 
   }
   .snav li{
     margin: inherit;
-    width: 100%;
+    width: 99.8%;
     font-size: 3vmin;
     color: white;
-  }
-  .title{
-    z-index: 1;
-  }
-}
+}*/
 
 /*------------------------------------------------*/
